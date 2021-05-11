@@ -21,4 +21,66 @@ var circ = function (diameter) {
 };
 console.log(circ(7.5));
 // arrays
+var names = ['luigi', 'mario', 'yoshi']; // array of strings
+names.push('toad');
+// names.push(3)
+// names[0] = 3
+var numbers = [10, 20, 30, 40];
+numbers.push(25);
+// numbers.push('shaun')
+// numbers[1] = 'shaun'
+var mixed = ['ken', 4, 'chun-li', 8, 9]; // declair at start - can add all
+mixed.push('ryu');
+mixed.push(10);
+mixed[0] = 3;
 // objects
+var ninja = {
+    name: 'mario',
+    belt: 'black',
+    age: 30
+};
+ninja.age = 40;
+ninja.name = 'ryu';
+// ninja.age = '30' // need to be number, not a string
+// ninja.skills = ['fighting', 'sneaking'] // can't add additional objects
+// overright is possible, but need every object as before (can't add new one as well)
+ninja = {
+    name: 'yoshi',
+    belt: 'orange',
+    age: 40
+};
+// explicit types
+var character3;
+var age2;
+var isLoggedIn;
+// age = 'luigi'
+age2 = 30;
+// isLoggedIn = 25
+isLoggedIn = true;
+// arrays
+// let ninjas: string[]
+var ninjas = [];
+// ninjas = ['yoshi', 'mario']
+ninjas.push('yoshi');
+// union types
+var mixed2 = []; // can store numbers and strings and booleans
+mixed2.push('hello');
+mixed2.push(20);
+mixed2.push(false);
+console.log(mixed2);
+var uid; // union type don't need (), but array needs it
+uid = '123';
+uid = 123;
+// objects
+var ninjaOne;
+ninjaOne = {
+    name: 'yoshi',
+    age: 30
+};
+ninjaOne = []; // can be an array too
+var ninjaTwo; // type of object
+ninjaTwo = {
+    name: 'mario',
+    age: 20,
+    beltColor: 'black'
+}; // can't add an extra property because they are declared already
