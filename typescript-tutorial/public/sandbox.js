@@ -1,3 +1,4 @@
+"use strict";
 // ts uses strict stipes
 var character = 'mario';
 console.log(character);
@@ -47,7 +48,8 @@ ninja.name = 'ryu';
 ninja = {
     name: 'yoshi',
     belt: 'orange',
-    age: 40
+    age: 40,
+    // skills: []
 };
 // explicit types
 var character3;
@@ -101,3 +103,4 @@ ninja2 = { name: 'yoshi', age: 25 };
 console.log(ninja2);
 ninja2 = { name: 25, age: 'yoshi' };
 console.log(ninja2);
+console.log('test');

@@ -133,3 +133,6 @@ ninja2 = { name: 'yoshi', age: 25 }
 console.log(ninja2)
 ninja2 = { name: 25, age: 'yoshi' }
 console.log(ninja2)
+
+
+console.log('test')
