@@ -123,4 +123,36 @@ var minus2 = function (a, b) {
     return a + b;
 }; // :number - does not need to be placed
 var result = minus2(10, 7); // result automatically number
-// result = 'something else'
+var logDetails = function (uid, item) {
+    console.log(item + " has a uid of " + uid);
+};
+var greet2 = function (user) {
+    console.log(user.name + " says hello");
+};
+var greet2Again = function (user) {
+    console.log(user.name + " says hello");
+};
+// Function Signatures
+// let greet3: Function
+// () => void // function takes no arguments, returns void
+// example 1
+var greet3;
+greet = function (name, greeting) {
+    console.log(name + " says " + greeting);
+};
+// example 2
+var calc;
+calc = function (numOne, numTwo, action) {
+    if (action === 'add') {
+        return numOne + numTwo;
+    }
+    else {
+        return numOne - numTwo;
+    }
+};
+// example 3
+var logDetails2;
+logDetails2 = function (ninja) {
+    console.log(ninja.name + " is " + ninja.age + " years old");
+};
+// 

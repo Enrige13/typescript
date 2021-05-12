@@ -163,3 +163,52 @@ let result = minus2(10, 7) // result automatically number
 // result = 'something else'
 
 
+
+// Type Aliases
+type StringOrNum = string | number
+type objWithName = { name: string, uid: StringOrNum }
+
+const logDetails = (uid: StringOrNum, item: string) => {
+    console.log(`${item} has a uid of ${uid}`)
+}
+
+const greet2 = (user: objWithName) => {
+    console.log(`${user.name} says hello`)
+}
+
+const greet2Again = (user: objWithName) => {
+    console.log(`${user.name} says hello`)
+}
+
+
+
+// Function Signatures
+// let greet3: Function
+// () => void // function takes no arguments, returns void
+
+// example 1
+let greet3: (a: string, b: string) => void;
+greet = (name: string, greeting: string) => { // must have the signature
+  console.log(`${name} says ${greeting}`);
+}
+
+// example 2
+let calc: (a: number, b: number, c: string) => number;
+calc = (numOne: number, numTwo: number, action: string) => {
+  if (action === 'add') {
+    return numOne + numTwo;
+  } else {
+    return numOne - numTwo;
+  }
+}
+
+// example 3
+let logDetails2: (obj: {name: string, age: number}) => void;
+type person = {name: string, age: number}
+logDetails2 = (ninja: person) => {
+  console.log(`${ninja.name} is ${ninja.age} years old`);
+}
+
+
+
+// 
