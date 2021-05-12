@@ -113,3 +113,23 @@ ninjaTwo = {
 } // can't add an extra property because they are declared already
 
 
+
+// any Type
+let age3: any = 25 // reverts ts to js, less helpful 
+age3 = true
+console.log(age3)
+age3 = 'hello'
+console.log(age3)
+age3 = { name: 'luigi' }
+console.log(age3)
+
+let mixed3: any[] = []
+mixed3.push('mario')
+mixed3.push(false)
+console.log(mixed3)
+
+let ninja2: { name: any, age: any }
+ninja2 = { name: 'yoshi', age: 25 }
+console.log(ninja2)
+ninja2 = { name: 25, age: 'yoshi' }
+console.log(ninja2)

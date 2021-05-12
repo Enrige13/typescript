@@ -84,3 +84,20 @@ ninjaTwo = {
     age: 20,
     beltColor: 'black'
 }; // can't add an extra property because they are declared already
+// any Type
+var age3 = 25; // reverts ts to js, less helpful 
+age3 = true;
+console.log(age3);
+age3 = 'hello';
+console.log(age3);
+age3 = { name: 'luigi' };
+console.log(age3);
+var mixed3 = [];
+mixed3.push('mario');
+mixed3.push(false);
+console.log(mixed3);
+var ninja2;
+ninja2 = { name: 'yoshi', age: 25 };
+console.log(ninja2);
+ninja2 = { name: 25, age: 'yoshi' };
+console.log(ninja2);
