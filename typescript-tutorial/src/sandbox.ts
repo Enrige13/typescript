@@ -135,4 +135,31 @@ ninja2 = { name: 25, age: 'yoshi' }
 console.log(ninja2)
 
 
+
+// Workflow
 console.log('test')
+
+
+
+// Function Basics
+let greet: Function
+// greet = 'hello'
+greet = () => {
+    console.log('hello, again')
+}
+
+const add = (a: number, b: number, c: number|string = 10): void => {
+    console.log(a + b)
+    console.log(c)
+}   
+// c?: - ? = optional
+// number|string = 10 - default value 10, if value is added, it will be overwritten
+add(5, 10)
+
+const minus2 = (a: number, b: number):number => {
+    return a + b
+}   // :number - does not need to be placed
+let result = minus2(10, 7) // result automatically number
+// result = 'something else'
+
+

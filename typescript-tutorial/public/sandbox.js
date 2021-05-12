@@ -103,4 +103,24 @@ ninja2 = { name: 'yoshi', age: 25 };
 console.log(ninja2);
 ninja2 = { name: 25, age: 'yoshi' };
 console.log(ninja2);
+// Workflow
 console.log('test');
+// Function Basics
+var greet;
+// greet = 'hello'
+greet = function () {
+    console.log('hello, again');
+};
+var add = function (a, b, c) {
+    if (c === void 0) { c = 10; }
+    console.log(a + b);
+    console.log(c);
+};
+// c?: - ? = optional
+// number|string = 10 - default value 10, if value is added, it will be overwritten
+add(5, 10);
+var minus2 = function (a, b) {
+    return a + b;
+}; // :number - does not need to be placed
+var result = minus2(10, 7); // result automatically number
+// result = 'something else'
