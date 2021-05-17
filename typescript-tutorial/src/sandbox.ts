@@ -4,7 +4,7 @@ console.log(character)
 const inputs = document.querySelectorAll('input')
 console.log(inputs)
 inputs.forEach(input => {
-    console.log(input);
+    console.log(input)
 })
 
 
@@ -187,24 +187,24 @@ const greet2Again = (user: objWithName) => {
 // () => void // function takes no arguments, returns void
 
 // example 1
-let greet3: (a: string, b: string) => void;
+let greet3: (a: string, b: string) => void
 greet = (name: string, greeting: string) => { // must have the signature
-  console.log(`${name} says ${greeting}`);
+  console.log(`${name} says ${greeting}`)
 }
 
 // example 2
-let calc: (a: number, b: number, c: string) => number;
+let calc: (a: number, b: number, c: string) => number
 calc = (numOne: number, numTwo: number, action: string) => {
   if (action === 'add') {
-    return numOne + numTwo;
+    return numOne + numTwo
   } else {
-    return numOne - numTwo;
+    return numOne - numTwo
   }
 }
 
 // example 3
-let logDetails2: (obj: {name: string, age: number}) => void;
+let logDetails2: (obj: {name: string, age: number}) => void
 type person = {name: string, age: number}
 logDetails2 = (ninja: person) => {
-  console.log(`${ninja.name} is ${ninja.age} years old`);
+  console.log(`${ninja.name} is ${ninja.age} years old`)
 }

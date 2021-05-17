@@ -21,7 +21,7 @@
 // let invoices: Invoice[] = [] // only from the Invoice class can be added
 // invoices.push(invOne)
 // invoices.push(invTwo)
-// // invoices.push({ name: 'shaun' }); // not aloud, because not from Invoice
+// // invoices.push({ name: 'shaun' }) // not aloud, because not from Invoice
 
 // console.log(invoices)
 
@@ -48,15 +48,15 @@ const me: IsPerson = { // can't add here other things, because it doesn't match 
     },
 }
 
-console.log(me);
+console.log(me)
 me.speak('hello, world')
 
 const greetPerson = (person: IsPerson): void => {
     console.log('hello ', person.name)
 }
 
-greetPerson(me);
-//greetPerson({name: 'shaun'}); // must match IsPerson
+greetPerson(me)
+//greetPerson({name: 'shaun'}) // must match IsPerson
 
 
 
@@ -68,7 +68,7 @@ import { Invoice } from './classes/Invoice.js'
 const invOne = new Invoice('mario', 'work on the mario website', 250)
 const invTwo = new Invoice('luigi', 'work on the luigi website', 300)
 
-let invoices: Invoice[] = [];
+let invoices: Invoice[] = []
 invoices.push(invOne)
 invoices.push(invTwo)
 

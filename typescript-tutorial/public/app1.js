@@ -20,7 +20,7 @@ const greetPerson = (person) => {
     console.log('hello ', person.name);
 };
 greetPerson(me);
-//greetPerson({name: 'shaun'}); // must match IsPerson
+//greetPerson({name: 'shaun'}) // must match IsPerson
 // classes + modules
 // drawback: only modern browsers support that, not in a single file (seperate requests)
 // webpack to solve the "single file" problem

@@ -1,7 +1,7 @@
 export class Invoice {
-    // readonly client: string;
-    // private details: string;
-    // public amount: number;
+    // readonly client: string
+    // private details: string
+    // public amount: number
     constructor(client, // read in and outside, but not change it
     details, // private not able to log it in the console
     amount) {

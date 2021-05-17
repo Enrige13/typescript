@@ -30,7 +30,6 @@ var ResourceType;
     ResourceType[ResourceType["FILM"] = 2] = "FILM";
     ResourceType[ResourceType["DIRECTOR"] = 3] = "DIRECTOR";
 })(ResourceType || (ResourceType = {}));
-;
 const docOne = {
     uid: 1,
     resourceType: ResourceType.BOOK,

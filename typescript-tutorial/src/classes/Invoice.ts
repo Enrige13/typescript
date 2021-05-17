@@ -1,9 +1,9 @@
 import { HasFormatter } from '../interfaces/HasFormatter.js'
 
 export class Invoice implements HasFormatter {
-    // readonly client: string;
-    // private details: string;
-    // public amount: number;
+    // readonly client: string
+    // private details: string
+    // public amount: number
   
     constructor(
       readonly client: string, // read in and outside, but not change it
