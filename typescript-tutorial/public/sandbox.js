@@ -155,4 +155,3 @@ var logDetails2;
 logDetails2 = function (ninja) {
     console.log(ninja.name + " is " + ninja.age + " years old");
 };
-// 

@@ -15,6 +15,7 @@ tsc app.ts util.ts --target esnext --outfile index.js
 Auto compiler:
 #   tsc *.ts --watch
 #   tsc sandbox.ts -w
+#   tsc -w
 
 Config File:
 #   tsc --init
