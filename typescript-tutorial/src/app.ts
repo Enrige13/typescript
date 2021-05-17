@@ -27,6 +27,39 @@
 
 
 
+// interfaces
+// structure for objects
+export interface IsPerson {
+    name: string
+    age?: number
+    speak(a: string): void
+    spend(a: number): number
+}
+
+const me: IsPerson = { // can't add here other things, because it doesn't match the interface
+    name: 'shaun',
+    //age: 30,
+    speak(text: string): void {
+        console.log(text)
+    },
+    spend(amount: number): number {
+        console.log('I spent ', amount)
+        return amount
+    },
+}
+
+console.log(me);
+me.speak('hello, world')
+
+const greetPerson = (person: IsPerson): void => {
+    console.log('hello ', person.name)
+}
+
+greetPerson(me);
+//greetPerson({name: 'shaun'}); // must match IsPerson
+
+
+
 // classes + modules
 // drawback: only modern browsers support that, not in a single file (seperate requests)
 // webpack to solve the "single file" problem

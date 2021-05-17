@@ -3,22 +3,24 @@
 //     client: string
 //     details: string
 //     amount: number
-//     constructor(c: string, d: string, a: number){ // otherwise a mistake on client,...
-//         this.client = c
-//         this.details = d
-//         this.amount = a
-//     }
-//     format() { // return template string ``
-//         return `${this.client} owes £${this.amount} for ${this.details}`
-//     }
-// }
-// const invOne = new Invoice('mario', 'work on the mario website', 250)
-// const invTwo = new Invoice('luigi', 'work on the luigi website', 300)
-// let invoices: Invoice[] = [] // only from the Invoice class can be added
-// invoices.push(invOne)
-// invoices.push(invTwo)
-// // invoices.push({ name: 'shaun' }); // not aloud, because not from Invoice
-// console.log(invoices)
+const me = {
+    name: 'shaun',
+    //age: 30,
+    speak(text) {
+        console.log(text);
+    },
+    spend(amount) {
+        console.log('I spent ', amount);
+        return amount;
+    },
+};
+console.log(me);
+me.speak('hello, world');
+const greetPerson = (person) => {
+    console.log('hello ', person.name);
+};
+greetPerson(me);
+//greetPerson({name: 'shaun'}); // must match IsPerson
 // classes + modules
 // drawback: only modern browsers support that, not in a single file (seperate requests)
 // webpack to solve the "single file" problem
