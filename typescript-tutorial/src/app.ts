@@ -27,34 +27,21 @@
 
 
 
-// classes 2
-class Invoice {
-    // readonly client: string;
-    // private details: string;
-    // public amount: number;
-  
-    constructor(
-      readonly client: string, // read in and outside, but not change it
-      private details: string, // private not able to log it in the console
-      public amount: number,
-    ){}
-  
-    format() {
-        // this.client = 'Something else' - does not work, same in the forEach
-      return `${this.client} owes £${this.amount} for ${this.details}`
-    }
-  }
-  
-  const invOne = new Invoice('mario', 'work on the mario website', 250)
-  const invTwo = new Invoice('luigi', 'work on the luigi website', 300)
-  
-  let invoices: Invoice[] = [];
-  invoices.push(invOne)
-  invoices.push(invTwo)
-  
-  invoices.forEach(inv => {
-    console.log(inv.client, /*inv.details,*/ inv.amount, inv.format())
-  })
+// classes + modules
+// drawback: only modern browsers support that, not in a single file (seperate requests)
+// webpack to solve the "single file" problem
+import { Invoice } from './classes/Invoice.js' 
+
+const invOne = new Invoice('mario', 'work on the mario website', 250)
+const invTwo = new Invoice('luigi', 'work on the luigi website', 300)
+
+let invoices: Invoice[] = [];
+invoices.push(invOne)
+invoices.push(invTwo)
+
+invoices.forEach(inv => {
+console.log(inv.client, /*inv.details,*/ inv.amount, inv.format())
+})
   
 
 
