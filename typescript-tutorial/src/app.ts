@@ -1,3 +1,32 @@
+// classes
+class Invoice {
+    client: string
+    details: string
+    amount: number
+
+    constructor(c: string, d: string, a: number){ // otherwise a mistake on client,...
+        this.client = c
+        this.details = d
+        this.amount = a
+    }
+
+    format() { // return template string ``
+        return `${this.client} owes £${this.amount} for ${this.details}`
+    }
+}
+
+const invOne = new Invoice('mario', 'work on the mario website', 250)
+const invTwo = new Invoice('luigi', 'work on the luigi website', 300)
+
+let invoices: Invoice[] = [] // only from the Invoice class can be added
+invoices.push(invOne)
+invoices.push(invTwo)
+// invoices.push({ name: 'shaun' }); // not aloud, because not from Invoice
+
+console.log(invoices)
+
+
+
 const anchor = document.querySelector('a')!
 if(anchor) {
   console.log(anchor.href) 
